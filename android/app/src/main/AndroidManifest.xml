@@ -1,7 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.mateuspedroso.audio_player">
-   <application
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
         android:label="audio_player"
+        android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
